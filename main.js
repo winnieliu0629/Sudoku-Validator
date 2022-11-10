@@ -69,6 +69,7 @@ function includes1to9(arr){
             return false
         }
         return true
+    }
 }
 
 function sudokuIsValid(grid){
