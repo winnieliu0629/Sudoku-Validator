@@ -64,11 +64,11 @@ function getSection(grid,numColumns,numRows){
 // sudoku checker function
 
 function includes1to9(arr){
-    if(arr.includes(1 && 2 && 3 && 4 && 5 && 6 && 7 && 8 && 9)){
-        return true;
-    } else {
-        return false;
-    }
+    for(let i = 0; i < arr.length; i++) {
+        if(arr.indexOf(i) === -1) {
+            return false
+        }
+        return true
 }
 
 function sudokuIsValid(grid){
